@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2457a7;
+    color: white;
+    text-align: center;
+    padding: 28px 16px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    color: #2457a7;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #8bb5f0;
+    border-color: #2457a7;
+}
+
+button {
+    margin-top: 16px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2457a7;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background-color: #173d79;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#status:empty {
+    display: none;
+}
+
+#status.success {
+    color: #166534;
+    background-color: #dcfce7;
+}
+
+#status.error {
+    color: #991b1b;
+    background-color: #fee2e2;
+}
+
+#status.loading {
+    color: #1d4ed8;
+    background-color: #dbeafe;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note-item {
+    padding: 16px;
+    margin: 12px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.note-item h3 {
+    margin-top: 0;
+}
+
+.note-item p {
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background-color: #b91c1c;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background-color: #7f1d1d;
+}
+
+.empty-state {
+    color: #64748b;
+    font-style: italic;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 16px;
+    }
+}
