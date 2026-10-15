@@ -38,12 +38,11 @@ The server identifies the authenticated user from the token. Users can access an
 
 **POST** `/v1/notes`
 
-```json
 {
   "title": "Meeting notes",
   "body": "Discuss project deadlines and next steps."
 }
-```
+
 
 The title is required and must contain no more than 100 characters. The body is optional.
 
